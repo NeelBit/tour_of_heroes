@@ -1,1 +1,120 @@
-/* You can add global styles to this file, and also import other style files */
+@import "normalize.min.css";
+
+:root {
+    /* paleta de colores */
+    --colorFondoBlanco: #e0e0e0;
+    --colorPrimario: #784d3c;
+    --colorBlanco: #ffffff;
+    --colorBlancoRelax: #eee6e6;
+    --colorNegro: #000000;
+    --colorNegroRelax: #222;
+    --colorAzul1: #2419e3;
+    --colorAzul2: #0000ff5e;
+    /* --colorAzulClaro: rgba(43, 43, 213, 0.734); */
+
+    /* Fonts (montserrat 400,700 / cardo 400 italic) */
+    /* font-family: 'Cardo', serif;
+    font-family: 'Montserrat Alternates', sans-serif; */
+    --font: 'Montserrat Alternates', sans-serif;
+
+    --redondeo: 1rem;
+    --separacion: 2rem;
+
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+    --font_sec: 'Cardo', serif;
+}
+
+/* HTML */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: var(--font);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* BODY */
+body {
+    font-family: var(--font);
+    font-size: 1.8rem;
+    line-height: 1.5;
+    background-color: var(--colorFondoBlanco);
+}
+
+/* GLOBALES: */
+.contenedor {
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+    .contenedor {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        /* width: 85%;
+        max-width: 120rem; */
+        width: min(85%, 120rem);
+    }
+}
+
+a {
+    text-decoration: none;
+    /* color: var(--colorNegroRelax); */
+    color: var(--colorFondoBlanco);
+}
+
+
+/* HEADERS */
+h1,
+h2,
+h3 {
+    font-family: var(--font);
+    font-weight: 700;
+    text-shadow: 1px 1px 2px var(--colorNegro);
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+section h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 2.0rem;
+}
+
+/* IMAGENES */
+img {
+    max-width: 100%;
+    /* border-radius: var(--redondeo); */
+    margin: 0;
+    vertical-align: top;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}

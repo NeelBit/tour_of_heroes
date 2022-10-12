@@ -1,0 +1,48 @@
+.detalles-heroe {
+
+
+    margin-bottom: var(--separacion);
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.detalles-heroe>div {
+    width: 30rem;
+
+}
+
+.btn_volver {
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    color: #333;
+    margin: 1rem;
+}
+
+
+
+.btn_volver:hover {
+    background-color: #cfd8dc;
+}
+
+.btn_volver:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+.btn_save {
+    background-color: green;
+}
+
+.btn_save:hover {
+    background-color: green;
+}
